@@ -1,5 +1,6 @@
 import 'package:animated_bottom_bar/game_screen.dart';
 import 'package:animated_bottom_bar/screen/demo_screen.dart';
+import 'package:animated_bottom_bar/table_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
         fontFamily: "Montserrat",
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const TableScreen(),
+      // home: const HomeScreen(),
       // home: const GameScreen(),
     );
   }
