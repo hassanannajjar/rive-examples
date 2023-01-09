@@ -26,10 +26,10 @@ class _TableScreenState extends State<TableScreen>
     final file = RiveFile.import(data);
     artboard = file.mainArtboard;
     final controller =
-        StateMachineController.fromArtboard(artboard!, "State Machine 1");
+        StateMachineController.fromArtboard(artboard!, "table_state_machine");
     if (controller != null) {
       artboard!.addController(controller);
-      numValueInput = controller.findInput<double>("num");
+      numValueInput = controller.findInput<double>("persons");
       increaseInput = controller.findInput<bool>("increase");
       numValueInput!.value = 0.0;
       increaseInput!.value = true;
